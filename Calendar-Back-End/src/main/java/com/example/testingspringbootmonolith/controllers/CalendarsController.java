@@ -22,12 +22,6 @@ public class CalendarsController {
         return calendarRepository.findAll();
     }
 
-    @GetMapping("/calendar/in/{month}")
-    public Iterable<Calendar> findCalendarsByMonth(@PathVariable String month) {
-
-        return calendarRepository.findByMonth(month);
-    }
-
 
     @GetMapping("/calendar/{calendarId}")
     public Optional<Calendar> findCalendarById(@PathVariable Long calendarId) {

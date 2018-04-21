@@ -1,8 +1,11 @@
-
 .idea
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+.idea/workspace.xml
+.idea/Calendar-App.iml
+.idea/modules.xml
+.idea/vcs.xml
 
 cache
 

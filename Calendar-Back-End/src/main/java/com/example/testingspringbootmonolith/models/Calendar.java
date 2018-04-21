@@ -11,27 +11,27 @@ public class Calendar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "DAY")
+    @Column(name = "start_time")
+    private String start_time;
+
+    @Column(name = "end_time")
+    private String end_time;
+
+    @Column(name = "description")
+    private String description;
+
+    @Column(name = "day")
     private String day;
 
-    @Column(name = "MONTH")
+    @Column(name = "month")
     private String month;
 
-    @Column(name = "STARTTIME")
-    private String starttime;
-
-    @Column(name = "ENDTIME")
-    private String endtime;
-
-    @Column(name = "DESCREPTION")
-    private String descreption;
-
-    public Calendar(String day, String month, String starttime, String endtime, String descreption) {
+    public Calendar(String start_time, String end_time, String description,String day, String month) {
+        this.start_time = start_time;
+        this.end_time = end_time;
+        this.description = description;
         this.day = day;
         this.month = month;
-        this.starttime = starttime;
-        this.endtime = endtime;
-        this.descreption = descreption;
     }
 
 }
