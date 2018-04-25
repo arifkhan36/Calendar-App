@@ -6,4 +6,3 @@ import java.util.List;
 public interface CalendarRepository extends CrudRepository<Calendar, Long> {
 
 }
-    
